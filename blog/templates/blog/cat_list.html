@@ -1,0 +1,18 @@
+<html>
+    <p>Hi kittens!</p>
+<div>{{ cats }}</div>
+
+
+<div>
+    <h1><a href="/">Django Girls Cats</a></h1>
+</div>
+
+{% for cat in cats %}
+    <div>
+        <p><b>{{ cat.name }}</b></p>
+        <h1><a href="">{{ cat.ownes }}</a></h1>
+        <p>{{ cat.food|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+</html>
